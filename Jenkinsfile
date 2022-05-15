@@ -52,7 +52,7 @@ pipeline {
                                 DOCKER_PASSWORD: "${DOCKER_PASSWORD}"
                             ]
                         )
-                    }x
+                    }
             }
         }
 

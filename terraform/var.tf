@@ -1,5 +1,5 @@
 variable "AWS_REGION" {
-  default = "ap-east-1a"
+  default = "us-east-2a"
 }
 
 variable "instance_username" {

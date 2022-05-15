@@ -13,7 +13,7 @@ resource "aws_subnet" "SonTB4_public_subnet_01" {
   vpc_id = aws_vpc.SonTB4_VLAN.id
   cidr_block = "192.4.0.0/24"
   map_public_ip_on_launch = "true"
-  availability_zone = "ap-east-1a"
+  availability_zone = "us-east-2a"
   tags = {
       Name = "SonTB4_public_subnet_01"
   }
@@ -23,7 +23,7 @@ resource "aws_subnet" "SonTB4_public_subnet_02" {
     vpc_id = aws_vpc.SonTB4_VLAN.id
     cidr_block = "192.4.1.0/24"
     map_public_ip_on_launch = "true"
-    availability_zone = "ap-east-1b"
+    availability_zone = "us-east-2b"
     tags = {
         Name = "SonTB4_public_subnet_02"
     }
@@ -33,7 +33,7 @@ resource "aws_subnet" "SonTB4_private_subnet_01" {
     vpc_id = aws_vpc.SonTB4_VLAN.id
     cidr_block = "192.4.2.0/24"
     map_public_ip_on_launch = "false"
-    availability_zone = "ap-east-1a"
+    availability_zone = "us-east-2a"
     tags = {
       Name = "SonTB4_private_subnet_01"
     }
@@ -43,7 +43,7 @@ resource "aws_subnet" "SonTB4_private_subnet_02" {
     vpc_id = aws_vpc.SonTB4_VLAN.id
     cidr_block = "192.4.3.0/24"
     map_public_ip_on_launch = "false"
-    availability_zone = "ap-east-1b"
+    availability_zone = "us-east-2b"
     tags = {
       Name = "SonTB4_private_subnet_02"
     }
